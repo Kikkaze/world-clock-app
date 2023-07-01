@@ -35,6 +35,9 @@ setInterval(dubaiTime, 1000);
 function showSelectedCityTime(event) {
   let otherCitiesElement = document.querySelector("#other-cities");
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "location") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("Los_Angeles", "Seattle").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   otherCitiesElement.innerHTML = `
