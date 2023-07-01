@@ -31,3 +31,23 @@ function dubaiTime() {
 }
 dubaiTime();
 setInterval(dubaiTime, 1000);
+
+function showSelectedCityTime(event) {
+  let otherCitiesElement = document.querySelector("#other-cities");
+  let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone.replace("Los_Angeles", "Seattle").split("/")[1];
+  let cityTime = moment().tz(cityTimeZone);
+  otherCitiesElement.innerHTML = `
+  <div class="row">
+   <div class="col">   
+    <div class="selected-city">
+        <h2>${cityName}</h2>
+        <p class="date">${cityTime.format("MMM D, YYYY")}</p>
+        <p class="time">${cityTime.format("HH:mm:ss")}</p>
+    </div>
+   </div>
+  </div>`;
+}
+
+let citiesElement = document.querySelector("#cities");
+citiesElement.addEventListener("change", showSelectedCityTime);
