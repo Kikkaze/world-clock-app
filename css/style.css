@@ -23,7 +23,7 @@ select {
   margin: 100px auto 30px;
   max-width: 600px;
   padding: 50px 30px;
-  background-color: bisque;
+  background-color: #e9e9ed;
 }
 
 .date {
@@ -34,6 +34,8 @@ select {
 
 .extra-cities {
   background-color: #fff;
+  border: solid 4px;
+  border-color: #636363;
   border-radius: 80px;
   margin-top: 30px;
   padding: 15px;
@@ -48,6 +50,8 @@ select {
 
 .selected-city {
   background-color: #fff;
+  border: solid 4px;
+  border-color: #636363;
   border-radius: 80px;
   margin: 30px auto 0px;
   padding: 15px;
