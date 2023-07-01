@@ -60,6 +60,13 @@ select {
   line-height: 1;
 }
 
+.all-cities {
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
 .time {
   font-size: 25px;
   line-height: 1;

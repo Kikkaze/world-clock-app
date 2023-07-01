@@ -49,6 +49,9 @@ function showSelectedCityTime(event) {
         <p class="time">${cityTime.format("HH:mm:ss")}</p>
     </div>
    </div>
+  </div>
+  <div class="all-cities">
+  <a href="/">All cities</a>
   </div>`;
 }
 
