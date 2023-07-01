@@ -46,6 +46,20 @@ select {
   line-height: 1;
 }
 
+.selected-city {
+  background-color: #fff;
+  border-radius: 80px;
+  margin: 30px auto 0px;
+  padding: 15px;
+  text-align: center;
+  max-width: 160px;
+}
+.selected-city h2 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+
 .time {
   font-size: 25px;
   line-height: 1;
